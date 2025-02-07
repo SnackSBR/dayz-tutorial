@@ -22,6 +22,7 @@ else
 
     # Back-date the sources to POT-Creation-Date. The content lives in two
     # directories:
+	rm -r src/
     git restore --source "$(git rev-list -n 1 --before "$pot_creation_date" @)" src/
     # Set language and adjust site URL. Clear the redirects since they are
     # in sync with the source files, not the translation.
@@ -34,5 +35,7 @@ else
         export MDBOOK_OUTPUT__PANDOC__PROFILE__PDF__DEFAULTS=".github/pandoc/$book_lang.yaml"
     fi
 fi
+
+mdbook build -d "$dest_dir"
 
 echo "::endgroup::"
