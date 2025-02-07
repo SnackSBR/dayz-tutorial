@@ -1,0 +1,603 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dayz Tutorials\n"
+"POT-Creation-Date: 2025-02-07T03:43:58-03:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#: src\SUMMARY.md
+msgid "Summary"
+msgstr ""
+
+#: src\SUMMARY.md src\index.md
+msgid "Start Here"
+msgstr "Comece Aqui"
+
+#: src\SUMMARY.md
+msgid "Dayz Tools"
+msgstr "Dayz Tools"
+
+#: src\SUMMARY.md
+msgid "Mikero's Tools"
+msgstr "Mikero's Tools"
+
+#: src\SUMMARY.md
+msgid "DayZExtract"
+msgstr "DayZExtract"
+
+#: src\SUMMARY.md
+msgid "VSCode"
+msgstr "VSCode"
+
+#: src\SUMMARY.md
+msgid "Resources"
+msgstr ""
+
+#: src\SUMMARY.md
+msgid "Tutorials"
+msgstr ""
+
+#: src\SUMMARY.md
+msgid "Basic"
+msgstr ""
+
+#: src\SUMMARY.md src\tutorials/retexture.md
+msgid "Retexture"
+msgstr ""
+
+#: src\SUMMARY.md src\tutorials/script.md
+msgid "Script"
+msgstr ""
+
+#: src\index.md
+msgid ""
+"This guide will help you with the basics of modding dayz showing a couple of "
+"examples and tools to use."
+msgstr ""
+
+#: src\index.md
+msgid "[Dayz Tools](start/dayztools.html) Bohemia toolset for modding dayz."
+msgstr ""
+
+#: src\index.md
+msgid ""
+"[DayZExtract](start/dayzextract.html) Program to extract the official files from "
+"dayz."
+msgstr ""
+
+#: src\index.md
+msgid "[Mikero's Tools](start/mikerostools.html) Another program with tons of tools."
+msgstr ""
+
+#: src\index.md
+msgid "[VSCode](start/vscode.html) Great text editor with search tool."
+msgstr ""
+
+#: src\index.md
+msgid "[Resources](start/resources.html) List with external resouces."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "[Dayz Tools](#dayz-tools)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid ""
+"[Dayz Tools](https://store.steampowered.com/app/830640/DayZ_Tools/) is a tool "
+"created by by Bohemia for Dayz Modders. It's the bare minimum to create and publish "
+"your mod."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "[Finding Dayz Tools inside Steam](#finding-dayz-tools-inside-steam)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "Open your steam and go to your library."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "Click on the arrow to open filter options."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "![Steam Library](dayztool/4.png)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "Tick the Tools filter"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "![Tools filer](dayztool/5.png)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "Search for Dayz Tools"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "![Dayz Tools](dayztool/6.png)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "[The P Drive](#the-p-drive)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "Start the tool from steam."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "![Dayz tool](dayztool/1.png)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "Go to **Tools** and click **Mount Drive P**."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "![Mount P Drive](dayztool/2.png)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "You need to mount the P drive everytime you will pack your mod."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid ""
+"You can also go to **Settings** and change it to always mount the P drive when you "
+"open Dayz Tools."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "![Automatic Mount](dayztool/3.png)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "[BankRev](#bankrev)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid ""
+"You can use BankRev to unpack mods and see how other people made something. It will "
+"not work with mods that have been obfuscated with third-party tools."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "[Tex View](#tex-view)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid ""
+"You can open a .paa file to see the texture as a image. You can also save the "
+"texture as a image using Tex View by simple going to **File > Save as** and "
+"changing .paa to .png. You can also do the inverse, open the texture image and go to "
+"**File > Save as** and change the image texture to .paa."
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "[Publisher](#publisher)"
+msgstr ""
+
+#: src\start/dayztools.md
+msgid "This is where you will upload your finished/updated mod to the steam workshop."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "[Mikero's Tools](#mikeros-tools)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid ""
+"[Mikero's Tools](https://mikero.bytex.digital) is a third party toolset to help you "
+"build your mod. It have both free and paid functions but the free version is enough "
+"to build your mod."
+msgstr ""
+
+#: src\start/mikerostools.md src\start/vscode.md src\tutorials/basic.md
+msgid "[Download](#download)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Go to [Download Page](https://mikero.bytex.digital/Downloads)."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Download **Mikero\\_AiO\\_Installer**."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Install and run the AiO."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "The AiO will install/update all the tools."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "![Mikero AiO](mikero/1.png)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid ""
+"The tools will be accessible in the folder **C:\\\\Program Files (x86)\\\\Mikero\\"
+"\\DePboTools\\\\bin** or on your start menu in the mikero category."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "![Folder](mikero/2.png)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "[pboProject](#pboproject)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid ""
+"pboProject is the tool that we will use to pack our mods. ![pboProject GUI](mikero/3."
+"png)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "[Setting pboProject up](#setting-pboproject-up)"
+msgstr ""
+
+#: src\start/mikerostools.md src\start/dayzextract.md src\start/vscode.md
+msgid ""
+"**Make sure [Dayz Tools](dayztools.html) is running and the P:\\\\ drive is mounted."
+"**"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Click the Setup button."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "![Setup UI](mikero/4.png)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Change **+|-: Engine** to **DAYZSA**"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "You can disable the complete/error sound in the button **Completion Sounds...**"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "![Sound](mikero/5.png)"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Click **Restore Defaults** and **Restore Compress**"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Select or create your private key"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid ""
+"If you need to create a key click **Or, create a Key...**, delete the entire name "
+"and type the name your key will have. It can be anything."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Click **Ok**."
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "Enable **+K Sign Pbo(s)**, **+C: Full Build**"
+msgstr ""
+
+#: src\start/mikerostools.md
+msgid "This should be the basic setup to pack your mod for testing and release."
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "[DayZExtract](#dayzextract)"
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid ""
+"[DayZExtract](https://github.com/wrdg/DayZExtract) is a tool created by [Wardog]"
+"(https://github.com/wrdg) as an faster alternative to [Dayz Tools](dayztools.html) "
+"game data extraction"
+msgstr ""
+
+#: src\start/dayzextract.md src\start/vscode.md
+msgid "[Usage](#usage)"
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid ""
+"Go to [DayZExtract](https://github.com/wrdg/DayZExtract/releases) and download the "
+"latest _.MSI_ version."
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "Install the tool."
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "Start DayzExtract from the start menu or your desktop."
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "It should look like this."
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "![DayzExtract Folder](dayzextract/1.png)"
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "Press enter, the program already default the exctration to the P:\\\\ drive"
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "![Extraction](dayzextract/2.png)"
+msgstr ""
+
+#: src\start/dayzextract.md
+msgid "![End](dayzextract/3.png)"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "[VSCode](#vscode)"
+msgstr ""
+
+#: src\start/vscode.md
+msgid ""
+"[Visual Studio Code](https://code.visualstudio.com/) is a third party text editor to "
+"help you build your mod. It can help you find things in the unpacked DayZ/other mods "
+"code."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "Go to [Visual Studio Code](https://code.visualstudio.com/) page."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "Download the installer."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "Install and run."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "**Make sure you used [DayZExtract](dayzextract.html)**"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "Open **VSCode** if it's not already open."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "Go to **File > Open Folder...** and select your **P:\\\\ drive**"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "![vscode](vscode/1.png)"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "It will ask you if you trust the folder, click **Yes, I trust the authors**."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "![trust](vscode/2.png)"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "![vscodefolders](vscode/3.png)"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "You can now use VSCode to search and even edit your mod."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "You can search by right clicking a folder and select **Find in folder...**"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "![vscodesearch](vscode/4.png)"
+msgstr ""
+
+#: src\start/vscode.md
+msgid "After searching you can click in any result and it will open the file."
+msgstr ""
+
+#: src\start/vscode.md
+msgid "![vscodesearchresult](vscode/5.png)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Resources](#resources)"
+msgstr ""
+
+#: src\start/resources.md
+msgid ""
+"Here you can find links for sites with information about modding and discord "
+"community servers for modders."
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Bohemia Wiki](#bohemia-wiki)"
+msgstr ""
+
+#: src\start/resources.md
+msgid ""
+"[Enforce Script Syntax](https://community.bistudio.com/wiki/DayZ:"
+"Enforce_Script_Syntax)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Modding Basics](https://community.bistudio.com/wiki/DayZ:Modding_Basics)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Discord Servers](#discord-servers)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Enfusion Modders](https://discord.gg/9hCYwX9JrU)"
+msgstr ""
+
+#: src\start/resources.md
+msgid ""
+"[Bhaalshad's Coding 101 DayZ Server](https://discord.gg/bhaalshad-s-coding-101-dayz-"
+"server-701154567173439550)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Github](#github)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[DayZ Scripts](https://github.com/BohemiaInteractive/DayZ-Script-Diff)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Dayz Samples](https://github.com/BohemiaInteractive/DayZ-Samples)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Golphin References](https://github.com/TrueDolphin/references)"
+msgstr ""
+
+#: src\start/resources.md
+msgid "[Others](#others)"
+msgstr ""
+
+#: src\start/resources.md
+msgid ""
+"[Emissive Tutorial](https://web.archive.org/web/20220629201538/https://zi.sb/blog/"
+"Dayz_Emissive/)"
+msgstr ""
+
+#: src\tutorials/index.md
+msgid "[Tutorials](#tutorials)"
+msgstr ""
+
+#: src\tutorials/index.md
+msgid "Index for the tutorials"
+msgstr ""
+
+#: src\tutorials/index.md
+msgid "[Basic](tutorials/basic.html) The basic setup for any mod."
+msgstr ""
+
+#: src\tutorials/index.md
+msgid "[Retexture](tutorials/retexture.html) Example to how to retexture a item."
+msgstr ""
+
+#: src\tutorials/index.md
+msgid "[Script](tutorials/script.html) Example to how to change a vanilla script."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "[Basic](#basic)"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "This will be the basic skeleton for any mod for DayZ."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"**Make sure [Dayz Tools](../start/dayztools.html) is running and the P:\\\\ drive is "
+"mounted.**"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"**Make sure you did the initial configuration of [pboProject](../start/mikerostools."
+"html#setting-pboproject-up)**"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"[Download](https://github.com/SnackSBR/DayzModStructure/archive/refs/heads/main.zip) "
+"the mod skeleton from the [Github](https://github.com/SnackSBR/DayzModStructure)"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"Extract it anywhere and copy the folder **MyAwesomeMod** to your **P:\\\\ drive**"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"Rename all the folders named **MyAwesomeMod** to your mod name (don't use space in "
+"the name)."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "You can also delete all the files name **.gitkeep**"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "Open the file **config.cpp** with your favorite text editor."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"Rename all **MyAwesomeMod** with your mod name, the same you renamed all the folders."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "![pboProject GUI](../start/mikero/3.png)"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"Click **+|-: Mod Folder Output...** and choose somewhere safe on your PC. This is "
+"where the packed mod will be placed."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"Click **Primary Source...** and select your renamed mod folder **inside your P:\\\\ "
+"drive**"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "Click **Crunch**"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "![pboProject GUI](basic/1.png)"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "after a few seconds you should see the success text"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid ""
+"Go to the folder you chose when you clicked **+|-: Mod Folder Output...** and your "
+"packed mod will be there."
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "![packed mod](basic/2.png)"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "![addons folder](basic/3.png)"
+msgstr ""
+
+#: src\tutorials/basic.md
+msgid "![keys folder](basic/4.png)"
+msgstr ""
