@@ -1,0 +1,144 @@
+# Sample workflow for building and deploying a mdBook site to GitHub Pages
+#
+# To get started with mdBook see: https://rust-lang.github.io/mdBook/index.html
+#
+name: Deploy mdBook site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  pull_request:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install formatting dependencies
+        run: |
+          sudo apt update
+          sudo apt install gettext
+  find-languages:
+    runs-on: ubuntu-latest
+    outputs:
+      languages: ${{ steps.find-languages.outputs.languages }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find languages
+        id: find-languages
+        shell: python
+        run: |
+          import os, json, pathlib
+          languages = ["en"] + [p.stem for p in pathlib.Path("po").iterdir() if p.suffix == ".po"]
+          github_output = open(os.environ["GITHUB_OUTPUT"], "a")
+          github_output.write("languages=")
+          json.dump(sorted(languages), github_output)
+
+build:
+    runs-on: ubuntu-latest
+    needs:
+      - find-languages
+    strategy:
+      matrix:
+        language: ${{ fromJSON(needs.find-languages.outputs.languages) }}
+      fail-fast: false
+    env:
+      # Opt-in for checking links in translations - add the language below.
+      LINK_CHECKED_LANGUAGES: '["en", "pt-BR"]'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # We need the full history for build.sh below.
+
+      - name: Update Rust
+        run: rustup update
+
+      - name: Setup Rust cache
+        uses: ./.github/workflows/setup-rust-cache
+        with:
+          key: ${{ contains(fromJSON(env.LINK_CHECKED_LANGUAGES), matrix.language) }}
+
+      - name: Install Gettext
+        run: |
+          sudo apt update
+          sudo apt install gettext
+
+      - name: Install mdbook
+        uses: ./.github/workflows/install-mdbook
+
+      - name: Test format of ${{ matrix.language }} translation
+        if: matrix.language != 'en'
+        run: msgfmt --statistics -o /dev/null po/${{ matrix.language }}.po
+
+      - name: Test extracting English strings
+        if: matrix.language == 'en'
+        run: |
+          MDBOOK_OUTPUT='{"xgettext": {"pot-file": "messages.pot"}}' mdbook build -d po
+          msgfmt -o /dev/null --statistics po/messages.pot
+
+      - name: Install mdbook-linkcheck
+        if: contains(fromJSON(env.LINK_CHECKED_LANGUAGES), matrix.language)
+        run: cargo install mdbook-linkcheck --locked --version 0.7.7
+
+      - name: Build ${{ matrix.language }} translation
+        run: |
+          .github/workflows/build.sh ${{ matrix.language }} book/dayz-tutorial-${{ matrix.language }}
+
+      # Upload the book now to retain it in case mdbook test fails.
+      - name: Upload book
+        uses: actions/upload-artifact@v4
+        with:
+          name: dayz-tutorial-${{ matrix.language }}
+          path: book/
+
+      - name: Test code snippets
+        env:
+          MDBOOK_BOOK__LANGUAGE: ${{ matrix.language }}
+        run: mdbook test
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install test framework
+        run: npm install
+        working-directory: ./tests
+      - name: Test Javascript
+        if: matrix.language == 'en'
+        run: npm test
+        env:
+          TEST_BOOK_DIR: ../book/dayz-tutorial-${{ matrix.language }}/html
+        working-directory: ./tests
+        
+po-diff:
+    name: Translation diff
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Rust cache
+        uses: ./.github/workflows/setup-rust-cache
+
+      - name: Install mdbook
+        uses: ./.github/workflows/install-mdbook
+
+      - name: Copy latest version of translations
+        run: cp -r po new-po
+
+      - name: Checkout base version
+        run: git checkout ${{ github.event.pull_request.base.sha }}
+
+      - name: Translation diff
+        run: i18n-report diff po/ new-po/ > $GITHUB_STEP_SUMMARY
