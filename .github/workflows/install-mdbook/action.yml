@@ -8,11 +8,3 @@ runs:
     - name: Install mdbook
       run: bash install-mdbook.sh
       shell: bash
-
-    - name: Install dependencies for mdbook-pandoc
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y texlive texlive-luatex texlive-lang-cjk texlive-lang-arabic librsvg2-bin fonts-noto
-        curl -LsSf https://github.com/jgm/pandoc/releases/download/3.6.2/pandoc-3.6.2-linux-amd64.tar.gz | tar zxf -
-        echo "$PWD/pandoc-3.6.2/bin" >> $GITHUB_PATH
-      shell: bash
