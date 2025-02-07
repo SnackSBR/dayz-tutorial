@@ -12,11 +12,6 @@ create-missing = false
 [preprocessor.gettext]
 after = ["links"]
 
-[output.xgettext]
-optional = true
-pot-file = "messages.pot"
-granularity = 0
-
 [output.html]
 git-repository-url = "https://github.com/SnackSBR/dayz-tutorial"
 additional-css = [
