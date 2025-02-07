@@ -3,7 +3,7 @@ authors = ["SnackS"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Dayz Tutorial"
+title = "Dayz Tutorials"
 
 [build]
 extra-watch-dirs = ["po", "listings"]
