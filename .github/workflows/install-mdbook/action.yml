@@ -7,7 +7,7 @@ runs:
   steps:
     - name: Install mdbook
       run: bash install-mdbook.sh
-      shell: bash-wrapper {0}
+      shell: bash
 
     - name: Install dependencies for mdbook-pandoc
       run: |
