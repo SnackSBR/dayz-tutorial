@@ -6,8 +6,8 @@ runs:
   using: composite
   steps:
     - name: Install mdbook
-      run: ./install-mdbook.sh
-      shell: bash
+      run: bash install-mdbook.sh
+      shell: bash-wrapper {0}
 
     - name: Install dependencies for mdbook-pandoc
       run: |
