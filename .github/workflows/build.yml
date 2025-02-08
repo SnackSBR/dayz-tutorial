@@ -63,7 +63,7 @@ jobs:
           github_output.write("languages=")
           json.dump(sorted(languages), github_output)
 
-build:
+  build:
     runs-on: ubuntu-latest
     needs:
       - find-languages
@@ -121,7 +121,7 @@ build:
           name: dayz-tutorial-${{ matrix.language }}
           path: book/
         
-po-diff:
+  po-diff:
     name: Translation diff
     runs-on: ubuntu-latest
     steps:
