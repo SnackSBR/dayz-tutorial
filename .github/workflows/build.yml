@@ -112,7 +112,7 @@ jobs:
 
       - name: Build ${{ matrix.language }} translation
         run: |
-          .github/workflows/build.sh ${{ matrix.language }} book/dayz-tutorial-${{ matrix.language }}
+          bash .github/workflows/build.sh ${{ matrix.language }} book/dayz-tutorial-${{ matrix.language }}
 
       # Upload the book now to retain it in case mdbook test fails.
       - name: Upload book

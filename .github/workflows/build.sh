@@ -29,11 +29,6 @@ else
     export MDBOOK_BOOK__LANGUAGE=$book_lang
     export MDBOOK_OUTPUT__HTML__SITE_URL=/dayz-tutorial/$book_lang/
     export MDBOOK_OUTPUT__HTML__REDIRECT='{}'
-
-    # Include language-specific Pandoc configuration
-    if [ -f ".github/pandoc/$book_lang.yaml" ]; then
-        export MDBOOK_OUTPUT__PANDOC__PROFILE__PDF__DEFAULTS=".github/pandoc/$book_lang.yaml"
-    fi
 fi
 
 mdbook build -d "$dest_dir"
