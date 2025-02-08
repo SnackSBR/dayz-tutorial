@@ -5,18 +5,18 @@
 ## [Finding Dayz Tools inside Steam](#finding-dayz-tools-inside-steam)
 
 1.  Open your steam and go to your library.
-2.  Click on the arrow to open filter options.
-3.  ![Steam Library](dayztool/4.png)
-4.  Tick the Tools filter
-5.  ![Tools filer](dayztool/5.png)
-6.  Search for Dayz Tools
-7.  ![Dayz Tools](dayztool/6.png)
+1.  Click on the arrow to open filter options.
+1.  ![Steam Library](dayztool/4.png)
+1.  Tick the Tools filter
+1.  ![Tools filer](dayztool/5.png)
+1.  Search for Dayz Tools
+1.  ![Dayz Tools](dayztool/6.png)
 
 ## [The P Drive](#the-p-drive)
 
 1.  Start the tool from steam.
-2.  ![Dayz tool](dayztool/1.png)
-3.  Go to **Tools** and click **Mount Drive P**.
+1.  ![Dayz tool](dayztool/1.png)
+1.  Go to **Tools** and click **Mount Drive P**.
 
 *   ![Mount P Drive](dayztool/2.png)
     *   You need to mount the P drive everytime you will pack your mod.
