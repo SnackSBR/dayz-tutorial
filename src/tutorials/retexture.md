@@ -37,6 +37,7 @@ This tutorial will show you how to do a basic vanilla retextured item
 		```
 1. **Sweater_Pink** is based in the vanilla **Sweater_Gray**
 1. For the **CfgPatches** class name I'm using the same structure as the folder, I grab the vanilla class name and add the mod name before. The original config.cpp for the example can be found in **P:\DZ\characters\tops\data\config.cpp**
+1. **requiredAddons** is the the class inside the **CfgPatches** of the original config.cpp. Always fill the requiredAddons when modding.
 1. **Sweater_ColorBase** is a vanilla class for the base of all sweaters.
 1. **Sweater_Pink** is the new item I'm creating.
 1. For the texture I copied the vanilla ones (sweater_chalk_g_co.paa and sweater_chalkstone_co.paa) from P:\DZ\characters\tops\data to the folder **MyAwesomeMod\dz\characters\tops\data**, renamed them to the new color (in this case renamed chalk and chalkstone to pink);

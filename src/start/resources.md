@@ -18,6 +18,9 @@ Here you can find links for sites with information about modding and discord com
 *   [Dayz Samples](https://github.com/BohemiaInteractive/DayZ-Samples)
 *   [Golphin References](https://github.com/TrueDolphin/references)
 
+## [YouTube](#youtube)
+*	[Tree's Scripting Theory and Foundational Basics](https://www.youtube.com/watch?v=Da_IVQ7KMws)
+
 ## [Others](#others)
 
 *   [Emissive Tutorial](https://web.archive.org/web/20220629201538/https://zi.sb/blog/Dayz_Emissive/)
