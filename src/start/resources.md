@@ -19,7 +19,9 @@ Here you can find links for sites with information about modding and discord com
 *   [Golphin References](https://github.com/TrueDolphin/references)
 
 ## [YouTube](#youtube)
-*	[Tree's Scripting Theory and Foundational Basics](https://www.youtube.com/watch?v=Da_IVQ7KMws)
+
+*	[Tree's Scripting Theory and Foundational Basics](https://www.youtube.com/playlist?list=PLD2Gp8kxR3bZeDHLldXX541B9jpZ2vRjj)
+*	[Spurgle's DayZ Modding Beginner Basics](https://www.youtube.com/playlist?list=PLm6NfdQ3NmL9OBmbN-tl99F70bvzm6u7M)
 
 ## [Others](#others)
 
